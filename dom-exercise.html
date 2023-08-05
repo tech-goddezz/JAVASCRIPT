@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="button1"> 9a </button>
+
+    <button class="button2"> 9b </button>
+
+                <br>
+                <br>
+
+    <p> <button onclick="
+/* 9c  */            headChoice();
+    "> heads </button>   
+
+     <button onclick="
+/* 9c  */        tailChoice();
+     "> tails </button>      </p>  
+
+    <p class="ptag">         </p>
+
+                <br>
+    
+<!-- 9d -->
+        <input type="text" class="inputField" placeholder="Name" 
+        onkeydown="
+            onClicking(event);
+        ">
+
+        <button onclick="
+            nameClick();
+        "> Submit </button>
+
+        <p class="ptag2">         </p>
+    
+
+
+    <script>
+            /* 9c  */
+            function headChoice () {
+                document.querySelector('.ptag')
+                .innerHTML = `You chose: heads!`
+
+            }
+
+            /* 9c  */
+            function tailChoice () {
+                document.querySelector('.ptag')
+                .innerHTML = `You chose: tails!`
+
+            }
+
+            /* 9d  */
+            function nameClick () {
+                // go to the input field//
+                const nameText = document.querySelector('.inputField');
+
+                // get/collect the value or html value//
+                let theText = nameText.value;
+
+                // display the text in the ptag2 (paragraph) //
+                document.querySelector('.ptag2')
+                .innerHTML = `Your name is: ${theText}!` ;
+            }
+
+            /* 9e  */ /* & 9f */
+            function onClicking (event) {
+                if (event.key === 'Enter') {
+                    nameClick();
+                } 
+            }
+
+
+
+/* 9a  */   document.querySelector('button');
+            console.log(document.querySelector('button'));
+
+/* 9b  */
+            const change = document.querySelector('.button2');
+            change.innerHTML = '9b done!';
+        
+
+
+
+
+    </script>
+
+
+</body>
+</html>

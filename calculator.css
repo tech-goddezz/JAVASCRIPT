@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+button{
+    padding: 20px;
+    background-color: rgb(46, 46, 46);
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+}
+
+.add{
+    background-color: rgb(255, 115, 0);
+}
+
+.remove{
+    background-color: rgb(255, 115, 0);
+}
+
+.multiply{
+    background-color: rgb(255, 115, 0);
+}
+
+.divide{
+    background-color: rgb(255, 115, 0);
+}

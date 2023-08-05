@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+
+</head>
+<body>
+    
+    <p> Cart Quantity </p>
+
+    <button class="quantity" onclick="
+        console.log(`Cart Quantity: ${cartClick}`);
+    "> Show Quantity </button>
+
+    <button class="cart" onclick="
+        cartClick += 1;
+        console.log(`Cart Quantity: ${cartClick}`);
+    "> Add Cart </button>
+ 
+    <button class="add2"  onclick="
+        cartClick ++ ;
+        console.log(`Cart Quantity: ${cartClick}`);
+    "> +2 </button>
+
+    <button class="add3"  onclick="
+        cartClick += 3;
+        console.log(`Cart Quantity: ${cartClick}`);
+    "> +3 </button>
+
+    <button class="reset"  onclick="
+        cartClick = 0;
+        console.log(`Cart was Reset!`);
+        console.log(`Cart Quantity: ${cartClick}`);
+    "> Reset Cart </button>
+
+
+<!--5h-->   <button class="add4"  onclick="
+            cartClick += 4;
+            console.log(`Cart Quantity: ${cartClick}`);
+    "> +4 </button>
+
+<!--5h-->   <button class="add5"  onclick="
+            cartClick += 5;
+            console.log(`Cart Quantity: ${cartClick}`);
+    "> +5 </button>
+
+<!--5i-->   <button class="subtract1"  onclick="
+            cartClick -= 1;
+            console.log(`Cart Quantity: ${cartClick}`);
+     "> Remove from Cart </button>
+
+<!--5j-->   <button class="subtract2"  onclick="
+            cartClick -= 2;
+            console.log(`Cart Quantity: ${cartClick}`);
+    "> -2 </button>
+
+<!--5j-->   <button class="subtract3"  onclick="
+            cartClick -= 3;
+            console.log(`Cart Quantity: ${cartClick}`);
+    "> -3 </button>
+
+
+            <!--shortcuts-->
+
+<!--5k-->   <button class="add3"  onclick="
+            cartClick --;
+            console.log(`Cart Quantity: ${cartClick}`);
+     "> Remove from Cart </button>
+
+<!--5k-->   <button class="add3"  onclick="
+            cartClick -= 2;
+            console.log(`Cart Quantity: ${cartClick}`);
+    "> -2 </button>
+
+<!--5k-->   <button class="add3"  onclick="
+            cartClick -= 3;
+            console.log(`Cart Quantity: ${cartClick}`);
+    "> -3 </button>
+
+
+
+    
+<script>
+        let cartClick = 0;
+</script>
+
+</body>
+</html>

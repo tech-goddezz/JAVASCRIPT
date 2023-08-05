@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- COIN-FLIP GAME -->  
+
+<button onclick="
+                
+/* 6f */       let random = Math.random();
+/* 6h */       let result = '';
+
+/* 6g */    if (random < 0.5) {
+                result = 'heads';
+            }
+            else {
+                result = 'tails';
+            }
+        
+/* 6i */       const guess = 'heads' || 'tails';
+            if (guess === result) {
+                console.log('You Win!');
+            }
+            else {
+                console.log('You Lose!');
+            }
+"> Game: Pick 1</button>
+
+               
+
+
+            <!-- 6j challenge -->
+      <!--------------------------------------->
+<button onclick="
+                
+       let random2 = Math.random();
+       let result2 = '';
+
+   const example = random2 < 0.5 ? result2 = 'heads' : result2 = 'tails';
+
+   console.log(example);
+
+        
+       const guess2 = 'heads' || 'tails';
+    const example2 = guess2 === result2 ? 'You Win!' : 'You Lose!';
+
+    console.log(example2);
+            
+
+"> Game: Pick 2</button>
+        <!--------------------------------------->
+
+
+ <!--CART QUANTITY EXERCISE---------------------------->
+
+<!--6k-->   <button onclick="
+            cartClick --;
+            console.log(`Cart Quantity: ${cartClick}`);
+     "> Remove from Cart </button>
+
+<!--6k-->   <button onclick="
+                let max = 49;
+            if (max > 10) {
+                alert('The Cart is full');
+            }
+            else if (max < 0) {
+                alert('Not enough items in the cart');
+            }
+            else {
+                cartClick -= 2;
+            console.log(`Cart Quantity: ${cartClick}`);
+            }
+
+        "> -2 </button>
+
+<!--6k-->   <button onclick="
+            let max2 = -2;
+            if (max2 > 10) {
+                alert('The Cart is full');
+            }
+            else if (max2 < 0) {
+                alert('Not enough items in the cart');
+            }
+            else {
+                cartClick -= 3;
+            console.log(`Cart Quantity: ${cartClick}`);
+            }
+    "> -3 </button>
+
+<!------------------------------->
+
+
+
+
+
+
+
+    <script>
+
+/* 6a */    let hour = '20';  /* 6b */
+/* 6c */    const name = 'Lizzy';
+
+        if (hour >= 6 && hour <= 12) {
+            console.log(`Good Morning ${name}!`);
+        }
+        else if (hour >= 13 && hour <= 17) {
+            console.log(`Good Afternoon ${name}!`);
+        }
+        else {
+            console.log(`Good Night ${name}!`);
+        }
+
+
+/* 6d */        const age = 70;
+/* 6e */       const isHoliday = false;
+
+/* 6d */ if ((age <= 6 || age >= 65) && !isHoliday) {
+                console.log('Discount!');
+           }         
+           else {
+                console.log('No Discount!');
+           }
+
+
+
+
+
+           /* 6k script */
+           let cartClick = 0;
+
+    </script>
+</body>
+</html>

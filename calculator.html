@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--5l--> <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+        <!--5m-->
+
+<p>
+        <button class="one" onclick="
+/*5o*/      calculation += '1';
+            console.log(calculation);
+        "> 1 </button>
+
+        <button class="two" onclick="
+/*5p*/  calculation += '2';
+        console.log(calculation);
+        "> 2 </button>
+
+        <button class="three" onclick="
+/*5p*/  calculation += '3';
+        console.log(calculation);
+        "> 3 </button>
+
+        <button class="add" onclick="
+/*5p*/  calculation += ' + ' ;
+        console.log(calculation);
+        "> + </button>
+
+</p>
+
+
+
+<p>
+    <button class="four" onclick="
+/*5r*/  calculation += '4';
+        console.log(calculation);
+        "> 4 </button>
+
+        <button class="five" onclick="
+/*5r*/  calculation += '5';
+        console.log(calculation);
+        "> 5 </button>
+
+        <button class="six" onclick="
+/*5r*/  calculation += '6';
+        console.log(calculation);
+        "> 6 </button>
+
+        <button class="remove" onclick="
+/*5r*/  calculation += ' - ';
+        console.log(calculation);
+        "> - </button>
+</p>
+
+
+
+
+<p>
+        <button class="seven" onclick="
+/*5r*/  calculation += '7';
+        console.log(calculation);
+        "> 7 </button>
+
+        <button class="eight" onclick="
+/*5r*/  calculation += '8';
+        console.log(calculation);
+        "> 8 </button>
+
+        <button class="nine" onclick="
+/*5r*/  calculation += '9';
+        console.log(calculation);
+        "> 9 </button>
+
+        <button class="multiply" onclick="
+/*5r*/  calculation += ' * ';
+        console.log(calculation);
+        "> * </button>
+</p>
+
+
+
+
+<p>
+        <button class="zero" onclick="
+/*5r*/  calculation += '0';
+        console.log(calculation);
+        "> 0 </button>
+
+        <button class="dot" onclick="
+/*5r*/  calculation += ' . ';
+        console.log(calculation);
+        "> . </button>
+
+<!--5q--> <button class="equal" onclick="
+          calculation = eval(calculation);
+          console.log(calculation);
+          "> = </button>
+
+        <button class="divide" onclick="
+/*5r*/  calculation += ' / ';
+        console.log(calculation);
+        "> / </button>
+</p>
+
+
+
+<p>
+        <button class="clear" onclick="
+/*5r*/  updateCalculation();
+        "> clear </button>
+    </button>
+</p>
+
+
+</body>
+
+
+
+<!--5n-->
+<script>
+    let calculation = '';
+
+    /* 7a */    function updateCalculation () {
+                  calculation = '';
+                console.log(calculation);
+            }
+
+
+</script>
+    
+</body>
+</html>
